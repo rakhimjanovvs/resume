@@ -2,30 +2,37 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f0f0f0;
+  background: #e0e5ec;
   color: #333;
     }
 
 .container {
   max-width: 900px;
-  margin: 40px auto;
-  background: #fff;
+  margin: 20px auto;
+  border-radius: 40px;
+  background: #e0e5ec;
   padding: 40px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: inset 30px 30px 40px #a3b1c6, inset -30px -30px 40px #fff;
   display: flex;
   gap: 30px;
 }
 
 .photo {
-  flex: 0 0 180px;
+  border-radius: 20px;
+  padding: 20px;
+  height: 235px;
+  box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 10px #fff;
+  transition: 0.3s;
+}
+
+.photo:active {
+  box-shadow: none;
 }
 
 .photo img {
   width: 180px;
-  height: 180px;
   object-fit: cover;
-  border-radius: 10px;
-  border: 3px solid #3498db;
+  border-radius: 20px;
 }
 
 .content {
@@ -34,13 +41,26 @@ body {
 
 h1 {
   margin-top: 0;
-  border-bottom: 2px solid #3498db;
+  padding: 5px 20px;
+  border-bottom: 2px solid #a3b1c6;
   padding-bottom: 10px;
   color: #2c3e50;
 }
 
 .section {
   margin-bottom: 25px;
+  background-color: #a2b3ec0;
+  border-radius: 20px;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+.section:hover {
+  box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #fff;
+}
+
+.section:active {
+  box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #fff;
 }
 
 .section h2 {
@@ -55,17 +75,17 @@ h1 {
 
 .skills li {
     display: inline-block;
-    background: #3498db;
+    background: #2c3e50;
     color: #fff;
     padding: 5px 10px;
     margin: 5px 5px 0 0;
     border-radius: 4px;
     font-size: 14px;
-    transition: 0.5s all;
+    transition: 0.3s all;
 }
 
 li:hover {
-    background: #002a40;
+  scale: 1.1;
 }
 
 @media (max-width: 768px) {
