@@ -60,7 +60,7 @@ h1 {
 }
 
 .section:active {
-  box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #fff;
+  box-shadow: none;
 }
 
 .section h2 {
